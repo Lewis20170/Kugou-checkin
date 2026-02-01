@@ -1,9 +1,9 @@
-name: main
+name: Checkin Automation
 on:
-  workflow_dispatch:
-  # push:
   schedule:
-    - cron: 1 16 * * *
+    - cron: '03 16 * * *'
+  workflow_dispatch:
+
 jobs:
   run:
     runs-on: ubuntu-latest
